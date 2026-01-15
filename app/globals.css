@@ -12,13 +12,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    --foreground: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   }
 }
-
 body {
   background: var(--background);
   color: var(--foreground);

@@ -61,7 +61,7 @@ export default function Register() {
           </div>
 
           {/* Form */}
-          <form className="space-y-5">
+          <form onSubmit={handleRegister} className="space-y-5">
             {/* Name */}
             <div>
               <label className="block mb-1 text-sm font-medium text-slate-700">
@@ -122,6 +122,7 @@ export default function Register() {
             {/* Button */}
             <button
               type="submit"
+              disabled={loading}
               className="w-full rounded-xl bg-linear-to-r from-purple-600 to-indigo-600 
                 py-3 text-sm font-semibold text-white shadow-lg 
                 hover:scale-[1.02] hover:shadow-xl transition cursor-pointer"
